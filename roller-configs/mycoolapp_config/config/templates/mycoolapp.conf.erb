@@ -1,0 +1,8 @@
+server {
+  listen 80;
+  server_name <%= host.hostname %>;
+  root /var/groupon/mycoolapp/current/public;
+  rack_env <%= host.params["rack_env"] %>;
+  passenger_enabled on;
+  gzip on;
+}

@@ -1,0 +1,7 @@
+create_directory '/var/groupon/mycoolapp', 'audiencedeploy:audiencedeploy', 0755
+create_directory '/var/groupon/mycoolapp/shared/log', 'audiencedeploy:audiencedeploy', 0755
+create_directory '/var/groupon/mycoolapp/shared/system', 'audiencedeploy:audiencedeploy', 0755
+create_directory '/var/groupon/mycoolapp/shared/bundle', 'audiencedeploy:audiencedeploy', 0755
+create_directory '/usr/local/etc/nginx/servers.d/'
+
+render_template 'mycoolapp.conf.erb', '/usr/local/etc/nginx/servers.d/mycoolapp.conf'

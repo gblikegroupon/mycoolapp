@@ -1,0 +1,103 @@
+hostclass: mycoolapp
+monitors:
+  cpu:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_sar -S cpu -t wio=80:90
+  disk_space:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_disk_space_all -t min_free_pct=10:7
+  http:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_http -U 'http://localhost/' -w 5 -c 7
+  iostat_sda:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_iostat -D sda -w 50 -c 100
+  load:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_sar -S load -t one=3:5
+  mem:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_sar -S mem -t available=500M:250M
+  net_eth0:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_sar -S net -D eth0 -t bytes_in=100M:200M,bytes_out=100M:200M
+  ntp:
+    run_every: 300
+    shell_command: /usr/local/nagios/libexec/check_ntp_time -H ns1 -w 0.5 -c 1
+  ssh:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_ssh -w 0.5 -c 1
+  swap:
+    run_every: 60
+    shell_command: /usr/local/libexec/check_sar -S swap -t faults=500:1000
+notify:
+- sgaddipati@groupon.com
+packages:
+  failsafe:
+  - configurate-2011.12.09_19.01
+  - cron-4.1p6
+  - epkg-2.3.9_groupon1
+  - foreman-2011.09.13_01.53
+  - lockrun-2011.09.02_15.52
+  - ntp-4.2.6p7
+  - openssl-1.0.0d
+  - rsync-3.0.8pre1
+  - ruby-1.9.2_p290
+  - zsh-4.3.12
+  production:
+  - mycoolapp
+  - c_ares-1.7.4
+  - configurate-2011.12.09_19.01
+  - cron-4.1p6
+  - cronolog-1.6.2_groupon
+  - curl-7.21.4_ares
+  - encaptools-2011.09.08_00.55
+  - epkg-2.3.9_groupon1
+  - expat-2.0.1
+  - foreman-2011.09.13_01.53
+  - ganglia_gmond-3.1.7_stringfix
+  - ganglia_gmond_config-2011.11.29_10.52
+  - ganglia_gmond_py_shell_nagios-2011.12.13_11.31
+  - gcc-4.5.2
+  - gdb-7.3.1
+  - gem_bundler-1.0.18_r1.9.1
+  - gem_mysql2-0.3.7_r1.9.1
+  - gem_nagios_plugin-8_r1.9.1
+  - gem_passenger-3.0.4_r1.9.1
+  - git-1.7.4.1
+  - glib-2.29.2
+  - htop-0.9
+  - init_functions-2011.11.01_21.36
+  - iptraf-3.0.0
+  - libidn-1.9
+  - libpcap-1.1.1
+  - lockrun-2011.09.02_15.52
+  - lsof-4.85
+  - motd-2011.09.10_16.16
+  - mysql-5.1.56_percona_server
+  - nagios_plugins-1.4.15
+  - nagios_plugins_groupon-2012.01.04_17.39
+  - nc-1.84_10
+  - ncurses-5.7
+  - nginx-1.0.6_passenger_r1.9.1
+  - nginx_config_generic-2011.09.28_15.12
+  - ntp-4.2.6p7
+  - openssl-1.0.0d
+  - perl-5.12.3
+  - pm_Term_ReadLine_Gnu-1.20_p5.12
+  - python-2.7.1
+  - rb_auto_gem-2011.03.17_16.20_r1.8
+  - readline-6.2
+  - rsync-3.0.8pre1
+  - ruby-1.9.2_p290
+  - splunk-4.2.3
+  - splunk_forwarder-2011.12.15_21.21
+  - srm-1.2.11
+  - strace-4.5.20
+  - sysstat-10.0.1
+  - tcpdump-4.1.1
+  - top-3.8beta1
+  - traceroute-2.0.18
+  - unlink_ruby_18_terremark-2011.12_05.15_34
+  - vim-7.3
+  - zsh-4.3.12
