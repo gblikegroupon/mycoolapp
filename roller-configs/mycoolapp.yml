@@ -38,6 +38,7 @@ packages:
   - cron-4.1p6
   - epkg-2.3.9_groupon1
   - foreman-2011.09.13_01.53
+  - init_functions-2011.11.01_21.36
   - lockrun-2011.09.02_15.52
   - ntp-4.2.6p7
   - openssl-1.0.0d

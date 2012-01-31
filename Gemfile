@@ -1,5 +1,4 @@
 source "http://rubygems.org"
-source "http://rubygems"
 
 gem "sinatra", "1.2.6"
 gem "rack", "1.3.3"
@@ -7,8 +6,6 @@ gem "rack", "1.3.3"
 gem 'capistrano'
 gem 'capistrano-ext'
 gem "mysql2", "0.3.7"
-gem 'uuidtools'
-gem 'tracky'
 gem 'standalone_migrations'
 gem 'sequel'
 gem "rake", "0.8.7"
