@@ -45,7 +45,7 @@ packages:
   - ruby-1.9.2_p290
   - zsh-4.3.12
   production:
-  - mycoolapp
+  - mycoolapp-1
   - c_ares-1.7.4
   - configurate-2011.12.09_19.01
   - cron-4.1p6

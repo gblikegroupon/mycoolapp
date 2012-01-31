@@ -1,5 +1,5 @@
 #! /bin/sh 
-SNAPSHOT_NAME="mycoolapp"
+SNAPSHOT_NAME="mycoolapp-1"
 gtar  -cvzf $SNAPSHOT_NAME.tar.gz roller-configs/mycoolapp_config  
 
 curl --upload-file $SNAPSHOT_NAME.tar.gz http://config/package/$SNAPSHOT_NAME.tar.gz
