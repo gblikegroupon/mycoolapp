@@ -1,6 +1,8 @@
 language: ruby
 ruby_version:
   - "ruby-1.9.3-p194"
-scripts: 
-  - cucumber: ./script/ci/run_build.sh
-  - rspec: ./script/ci/run_build.sh
+script: 
+  - cucumber: ./script/ci/cucumber.sh
+  - jasmine: ./script/ci/cucumber.sh
+  - rspec: ./script/ci/rspec.sh
+post: devex, :email_pusher
