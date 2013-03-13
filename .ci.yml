@@ -1,5 +1,4 @@
 language: ruby
 ruby_version:
   - "ruby-1.9.3-p194"
-script: 
-  - cucumber: ./script/ci/cucumber.sh
+script: echo hello 
