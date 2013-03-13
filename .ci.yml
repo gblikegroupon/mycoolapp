@@ -1,2 +1,4 @@
 language: nodejs
-script: echo hello 
+script: 
+ - one: echo hello
+ - two: echo hello
