@@ -1,4 +1,4 @@
 language: nodejs
 script: 
- - one: echo hello
- - two: echo hello
+ - one: echo
+ - two: echo
