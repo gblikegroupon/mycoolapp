@@ -1,4 +1,4 @@
 language: nodejs
 script: 
  - one: echo
- - two: echo
+ - two: exit 1
