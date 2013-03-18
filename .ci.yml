@@ -1,4 +1,7 @@
-language: nodejs
+language: ruby
+ruby_version: 
+- "ruby"
+- "jruby"
 script: 
  - one: echo
  - two: exit 1
