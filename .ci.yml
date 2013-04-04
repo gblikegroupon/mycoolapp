@@ -1,4 +1,2 @@
-language: ruby
-ruby_version: 
-- "ruby"
-script:  echo
+language: java
+script:  echo hello
