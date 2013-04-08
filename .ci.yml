@@ -1,2 +1,4 @@
 language: java
 script:  echo hello
+branches: 
+- !master
