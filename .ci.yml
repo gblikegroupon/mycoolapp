@@ -2,3 +2,7 @@ language: java
 script:  echo hello
 branches: 
 - "!master"
+notifications:
+  master:
+    hipchat:
+     - 152316
