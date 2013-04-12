@@ -1,7 +1,6 @@
 language: java
 script:  echo hello
 notifications:
-  master:
+  /*.*/:
     hipchat:
      - 152316
-     - 152263
