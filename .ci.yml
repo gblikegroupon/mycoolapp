@@ -4,4 +4,3 @@ notifications:
   master:
     hipchat:
      - 152316
-     - 152263
