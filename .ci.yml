@@ -2,5 +2,6 @@ language: java
 script:  echo hello
 notifications:
   /.*/:
-    hipchat:
-     - 152316
+    hipchat: 152316
+  /*blah*/:
+    hipchat: 152316
