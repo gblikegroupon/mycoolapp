@@ -1,7 +1,5 @@
 language: java
 script:  echo hello
-notifications:
-  /.*/:
-    hipchat: 152316
-  /*blah*/:
-    hipchat: 152316
+post-build:
+   master: 
+    script: echo post build
