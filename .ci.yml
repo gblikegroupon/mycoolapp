@@ -1,5 +1,2 @@
 language: java
 script:  echo hello
-post-build:
-   master: 
-    script: echo post build
