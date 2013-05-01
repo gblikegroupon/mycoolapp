@@ -1,2 +1,4 @@
 language: java
-script:  echo hello
+script: 
+ - blah: echo blah
+ - asdf: echo asdf
