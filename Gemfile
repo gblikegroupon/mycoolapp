@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "sinatra", "1.2.6"
 gem "rack", "1.3.3"
-# deployment
+# deployment asfasdf
 gem 'capistrano'
 gem 'capistrano-ext'
 gem "mysql2", "0.3.7"
