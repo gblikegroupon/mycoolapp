@@ -12,7 +12,7 @@ begin
     t.pattern = ["./spec/**/*_spec.rb"]
   end
 
-  desc "Generate code coverage"
+  desc "Gessnerate code coverage"
   RSpec::Core::RakeTask.new(:coverage) do |t|
     t.pattern = ["./spec/**/*_spec.rb"]
     t.rcov = true
