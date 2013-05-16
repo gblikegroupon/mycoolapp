@@ -5,6 +5,7 @@ require 'rake'
 #asdfas
 @sadfas
 #asfasd
+qwerqwr
 begin
   require 'rspec/core/rake_task'
 
