@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rake'
 #adfa
+dfasf
 begin
   require 'rspec/core/rake_task'
 
