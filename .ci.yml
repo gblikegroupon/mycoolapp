@@ -4,3 +4,4 @@ build:
  run: exit 44
 notifications:
   - hipchat: 332323
+  - campfire: Devex
