@@ -1,4 +1,6 @@
-language: java
-script: 
- - blah: echo blah
- - asdf: echo asdf
+environment: 
+ language: java
+build: 
+ run: exit 44
+notifications:
+  - hipchat: 332323
