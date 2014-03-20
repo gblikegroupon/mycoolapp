@@ -1,8 +1,8 @@
 environment:
   language: ruby
   language_versions: 1.9.3_p392
-  build:
-    before: echo nothing
-    run:
-      one: echo "somfin"
-      two: echo "somfin else"
+build:
+  before: echo nothing
+  run:
+    one: echo "somfin"
+    two: echo "somfin else"
