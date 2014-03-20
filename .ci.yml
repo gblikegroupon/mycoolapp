@@ -1,7 +1,8 @@
-environment: 
- language: java
-build: 
- run: exit 44
-notifications:
-  - hipchat: 332323
-  - campfire: Devex
+environment:
+  language: ruby
+  language_versions: 1.9.3_p392
+  packages:
+  - mysql-5.5.27_percona_server_rel29.0
+build:
+  before: echo nothin
+  run: bundle exec rake db:create:all db:migrate db:test:prepare spec
