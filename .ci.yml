@@ -6,6 +6,3 @@ environment:
     run:
       one: echo "somfin"
       two: echo "somfin else"
-  notifictions:
-    - email:
-      - gblike@groupon.com
